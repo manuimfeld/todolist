@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #222831;
+    opacity: 0.8;
+    background-image: radial-gradient(#ffffff 0.5px, #f7f7f7 0.5px);
+    background-size: 10px 10px;
+    color: #EEEEEE;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav h1 {
+    color: #2578bb;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    font-size: 32px;
+}
+
+.form {
+    width: 50vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.form input[type=text] {
+    width: 80%;
+    height: 30px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    outline: none;
+    border: none;
+    padding-left: 10px;
+    background-image: radial-gradient(#ffffff 0.5px, #f7f7f7 0.5px);
+    color: black;
+    font-size: 14px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.form input[type=text]::placeholder {
+    color: #494949;
+}
+
+.form input[type=submit] {
+    height: 32px;
+    padding: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: none;
+    background: #2578bb;
+    color: #FAFAFA;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.form input[type=submit]:hover {
+    transition: all 300ms;
+    transform: scale(1.3);
+}
+
+.todo-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    width: 70vw;
+}
+
+.todo-list ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+.todo-list li {
+    width: 100%;
+    margin: 10px;
+    border-bottom: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.todo-list li p {
+    display: inline-block;
+    margin-left: 10px;
+    color: black;
+    min-width: 40%;
+
+    word-wrap: break-word
+
+
+}
+
+.todo-list button {
+    border-radius: 10px;
+    padding: 10px 20px;
+    background: red;
+    color: #fafafa;
+    border: 0px;
+    margin-right: 5px;
+}
+
+.todo-list button:nth-child(2) {
+    margin-right: 10px;
+}
+
+.todo-list button:hover {
+    transition: all 300ms;
+    transform: scale(1.1);
+}
+
+.tarea-opcion {
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width: 500px) {
+    .form {
+        width: 80%;
+    }
+
+    .todo-list {
+        width: 90%;
+    }
+
+    li button {
+        transform: scale(.9);
+    }
+}
+
+@media (max-width: 300px) {
+    .tarea-opcion {
+    transform: scale(0.8);
+    }
+}
