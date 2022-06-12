@@ -17,7 +17,7 @@ let setTodo = (e) => {
 let guardado = () => {
     let conver = JSON.parse(localStorage.getItem("tareas"))
     
-    if (conver.length > 0) {
+    if (conver.length > 0 && conver != null) {
         conver.map(tarea => {
             tareasContenedor.push(tarea)
         })
