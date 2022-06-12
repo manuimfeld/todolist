@@ -17,13 +17,13 @@ let setTodo = (e) => {
 let guardado = () => {
     let conver = JSON.parse(localStorage.getItem("tareas"))
     
-    if (conver.length > 0 && conver != null) {
+    if (conver == null) {
+        setTodo(tareasContenedor)
+    } else {
         conver.map(tarea => {
             tareasContenedor.push(tarea)
         })
         todocounter()
-    } else {
-        console.log('No hay tareas guardadas')
     }
 }
 
