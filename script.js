@@ -22,7 +22,9 @@ let guardado = () => {
             tareasContenedor.push(tarea)
         })
         todocounter()
-    } 
+    } else {
+        console.log('No hay tareas guardadas')
+    }
 }
 
 /* Con esta función recorro el array de tareas y los agrego a la página */
